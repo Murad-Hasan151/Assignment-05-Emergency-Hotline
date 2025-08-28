@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emergency Service Directory</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
     <!--google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,43 +25,51 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#41ff6b1a]">
+<body class="bg-[#41ff6b1a] ">
     <!-- header section start here -->
-     <header class="bg-white">
+     <header class="sticky top-0 bg-white shadow">
         <!-- navbar start here -->
-        <nav class="inter-font  flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center w-16/17 mx-auto py-6">
-            <div class="flex flex-col md:flex-row items-center gap-3 mb-3 md:mb-0">
-                <img src="assets/logo.png" class="w-[50px] h-[50px]" alt="">
-                <h2 class="text-[#006747] font-extrabold text-2xl leading-7">Emergency <br class="hidden sm:block"> Service</h2>
-            </div>
-            <div class=" flex gap-5">
-                <button class="flex items-center py-2 md:py-3 px-4 md:px-9 bg-[#41ff6b1a] rounded-[50px]"><span class="font-black mr-[10px]">0</span> <img src="assets/heart.png" class="w-[30px] h-[30px]" alt=""></button>
-                <button class="flex items-center py-2 md:py-3 px-4 md:px-9 bg-[#41ff6b1a] rounded-[50px]"><span class="font-black mr-[10px]">100</span> <img src="assets/coin.png" class="w-[25px] h-[25px]" alt=""></button>
-                <button class=" font-semibold text-white bg-[#00A63E] py-2 md:py-3 px-4 md:px-9 rounded-[50px]"><span>0</span> Copy</button>
-            </div>
-        </nav>
+            <nav class="inter-font  flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center w-16/17 mx-auto py-3 md:py-6 ">
+                <div class="flex flex-col md:flex-row items-center gap-3">
+                    <img src="assets/logo.png" class="w-[50px] h-[50px]" alt="">
+                    <h2 class="text-[#006747] font-extrabold text-2xl leading-7 ">Emergency <br class="hidden sm:block"> Service</h2>
+                </div>
+                <div class=" flex gap-5">
+                    <button class="flex items-center py-2 md:py-3 px-4 md:px-9 bg-[#41ff6b1a] rounded-[50px]"><span
+                            class="font-black mr-[10px]">0</span> <img src="assets/heart.png" class="w-[30px] h-[30px]"
+                            alt=""></button>
+                    <button class="flex items-center py-2 md:py-3 px-4 md:px-9 bg-[#41ff6b1a] rounded-[50px]"><span
+                            class="font-black mr-[10px]">100</span> <img src="assets/coin.png" class="w-[25px] h-[25px]"
+                            alt=""></button>
+                    <button class=" font-semibold text-white bg-[#00A63E] py-2 md:py-3 px-4 md:px-9 rounded-[50px]"><span>0</span>
+                        Copy</button>
+                </div>
+            </nav>
         <!-- navbar end here -->
-
-        <!-- hero section start here -->
-         <section class="hind-madurai-font text-white text-center py-6 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
-            <img src="assets/logo-dark.png" class="w-24 h-24 inline-block" alt="">
-            <h2 class="font-bold text-[40px] mt-3">Emergency Service Directory</h2>
-            <p class="font-semibold text-xl mt-3">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
-         </section>
-        <!-- hero section end here -->
     </header>
+
+    <!-- hero section start here -->
+    <section
+        class="hind-madurai-font text-white text-center py-6 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        <img src="assets/logo-dark.png" class="w-24 h-24 inline-block" alt="">
+        <h2 class="font-bold text-[40px] mt-3">Emergency Service Directory</h2>
+        <p class="font-semibold text-xl mt-3">Government Emergency Services at Your Fingertip – A Project by Government of
+            the People’s Republic of Bangladesh</p>
+    </section>
+    <!-- hero section end here -->
+
 
         
     <main class="w-15/16 flex flex-col md:flex-row mx-auto gap-[30px] pt-12 pb-22">
         <!-- card section start here-->
-        <section class="w-full md:w-12/16 grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+        <section id="card-container" class="w-full md:w-12/16 grid grid-cols-1 md:grid-cols-3 gap-[30px]">
             <!-- card 1 -->
             <div class="p-8 shadow-md bg-white rounded-xl">
                 <div class="flex justify-between items-center mb-4">
                     <div class="bg-[#FFE3E2] rounded-2xl p-[14px]">
                         <img src="assets/emergency.png" class="h-8 w-8 " alt="">
                     </div>
-                    <p class="text-2xl"><i class="fa-regular fa-heart "></i></p>
+                    <p class="text-2xl "><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div class="">
                     <h2 class="hind-madurai-font font-bold text-2xl">National Emergency Number</h2>
@@ -71,8 +80,8 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">All</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                    <button class="call-btn text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class=" fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -93,7 +102,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Police</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -115,7 +124,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Fire</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -137,7 +146,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Health</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -159,7 +168,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Help</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -181,7 +190,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Govt</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -203,7 +212,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Electricity</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -225,7 +234,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">NGO</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -247,7 +256,7 @@
                     <p class="roboto-font text-[#5C5C5C] text-lg bg-[#F2F2F2] py-[6px] px-4 rounded-[50px] inline">Travel</p>
                 </div>
                 <div class="flex justify-between gap-2 roboto-font text-[18px]">
-                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="border-1 text[#5C5C5C] w-full py-2 rounded-lg hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
                     <button class="text-white bg-[#00A63E] w-full py-2 rounded-lg hover:opacity-[50%]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
@@ -257,9 +266,12 @@
 
         <!-- history section start here -->
         <aside class="w-full md:w-4/16 bg-white rounded-xl p-6 shadow-md">
-            <div class="flex justify-between items-center ">
-                <p class="roboto-font font-medium text-xl"><i class="fa-regular fa-clock"></i> Call History</p>
+            <div class="flex justify-between items-center mb-4">
+                <p class="roboto-font font-medium text-xl"><i class="fa-solid fa-clock"></i> Call History</p>
                 <button class="inter-font font-semibold text-white bg-[#00A63E] py-2 md:py-3 px-4 md:px-9 rounded-[50px] hover:opacity-[50%]">Clear</button>
+            </div>
+            <div id="parent" class="">
+                
             </div>
         </aside>
         <!-- history section end here -->
