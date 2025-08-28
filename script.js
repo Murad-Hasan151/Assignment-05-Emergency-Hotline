@@ -46,9 +46,14 @@ getElement("card-container").addEventListener("click", function(e){
 // hurt counting function
 getElement("card-container").addEventListener("click", function(e){
     const hurtBtn = e.target;
+    // let redHrt = e.target.parentNode;
+    // if (redHrt.className.includes("redhrt")) {
+    //   redHrt.innerHTML = `<img src="assets/heart.png" class="w-[30px] h-[30px]" alt="">`;
+    // }
+
     let hurtNm = Number(getElement("hurtsNm").innerText);
     if(hurtBtn.className.includes("hurt")){
-        getElement("hurtsNm").innerText = hurtNm + 1;
+        getElement("hurtsNm").innerText = hurtNm + 1;   
     }
 });
 
