@@ -37,8 +37,7 @@ getElement("card-container").addEventListener("click", function(e){
         `;
         parentDiv.appendChild(childDiv);
         
-        const alerts =   "Calling" + " " + serviceTitle + " " + serviceNumber + "...";
-        alert(alerts)
+        alert("Calling" + " " + serviceTitle + " " + serviceNumber + "...");
     }  
 });
 
@@ -51,11 +50,27 @@ getElement("card-container").addEventListener("click", function(e){
     if(hurtBtn.className.includes("hurt")){
         getElement("hurtsNm").innerText = hurtNm + 1;
     }
-})
+});
 
 // clear button function
 getElement("clear-btn").addEventListener("click", function(){
-    getElement("parent").innerHTML = " "
-})
+    getElement("parent").innerHTML = " ";
+});
 
+
+// copy button function
+getElement("card-container").addEventListener("click", function(e){
+    const copyBtn = e.target;
+    const copyNm = Number(getElement("copy").innerText);
+    if(copyBtn.className.includes("copy-btn")){
+        getElement("copy").innerText = copyNm + 1;
+
+        const copyText = copyBtn.parentNode.parentNode.children[2].children[0].innerText;
+        navigator.clipboard.writeText(copyText).then(() => {
+            alert("Number copied: " + copyText);
+        }).catch(() => {
+            alert("Copied failed!")
+        });
+    }
+});
 
