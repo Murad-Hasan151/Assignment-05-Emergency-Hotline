@@ -1,7 +1,5 @@
 ## Some questions and answers about JavaScript.
 
----
-
 ### ❓ Question 1️⃣
   - What is the difference between **getElementById , getElementsByClassName , and querySelector / querySelectorAll ?**
 ### ✅ Answer :
